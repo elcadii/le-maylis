@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: #032c26;
+}
+h1 {
+  color: #ffffff;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  height: 10vh;
+  width: 100%;
+  background-color: #156055;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger {
+  margin-left: 20px;
+  background: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.bar {
+  margin: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: wheat;
+}
+#bar2 {
+  width: 20px;
+  transition: 0.3s;
+}
+.navigation:hover .hamburger #bar2 {
+  width: 30px;
+}
+.navigation:hover nav {
+  display: block;
+}
+nav {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  padding: 15px 20px;
+  background-color: #156055;
+  height: 85vh;
+  width: 10vw;
+  transition: 0.3s;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: bisque;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+header .navigation ul li a:hover {
+  padding-left: 12px;
+  color: #c6ad86;
+}
+/* img style ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+.logoimg img {
+  width: 60px;
+  cursor: pointer;
+}
+/* reseve btn style :::::::::::::::::::::::::::::::::::*/
+.reserveBtn button {
+  margin-right: 30px;
+  padding: 10px 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #c6ad84;
+  transition: 0.3s;
+}
+.reserveBtn button:hover {
+  background-color: #032c26;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #032c26 0px 7px 29px 0px;
+}
+.intredectioSection {
+  height: 80vh;
+  background-image: url(img/1_-_le_maylis_4.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 30px;
+  border-radius: 20px;
+  filter: drop-shadow(8px 8px 12px rgb(9, 9, 9));
+}
+.intredectioSection .logoimg img {
+  position: absolute;
+  left: 60%;
+  top: 18%;
+  width: 30%;
+}
+.reserver {
+  height: 12vh;
+  width: 90%;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  background-color: #032c26;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  filter: drop-shadow(8px 8px 12px rgb(9, 9, 9));
+}
+.reserver input,
+button {
+  color: azure;
+  padding: 10px 30px;
+  margin: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.reserver button {
+  padding: 8px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #c6ad84;
+}
+.reserver button:hover {
+  text-shadow: #000000;
+  color: #156055;
+  background-color: #8f7752;
+}
+.reserver select {
+  color: azure;
+  padding: 6px 20px;
+  margin: 10px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.reserver select option {
+  color: black;
+}
+.abouts {
+  position: relative;
+  height: 100vh;
+}
+.abouts .Pabout {
+  text-align: center;
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  width: 70%;
+  height: 85vh;
+  border: 2px solid #566550;
+}
+.abouts .Pabout h1 {
+  margin-top: 30px;
+  color: #c6ad86;
+}
+.abouts .Pabout .para {
+  position: absolute;
+  color: azure;
+  left: 30%;
+  width: 80vh;
+  text-align: left;
+  margin-top: 30px;
+}
+.abouts .Pabout .p {
+  margin: 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.AboutImg video {
+  position: absolute;
+  top: 11%;
+  left: 10%;
+  width: 23%;
+  height: 75vh;
+  border-radius: 40px;
+  filter: drop-shadow(6px 6px 8px #000000);
+  transition: 0.3s;
+}
+.AboutImg img:hover {
+  transform: scale(1.05);
+}
+.roomsection {
+  position: relative;
+  height: 110vh;
+}
+.roomsection h1,
+.foods h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.roomsection .img01 img {
+  position: absolute;
+  left: 18%;
+  width: 25%;
+  /* margin: 20px; */
+  height: 65vh;
+  border-radius: 20px;
+}
+.roomsection .img02 img {
+  position: absolute;
+  /* margin: 20px; */
+  bottom: 2%;
+  left: 18%;
+  width: 25%;
+  height: 30vh;
+  border-radius: 20px;
+}
+.roomsection .img03 img {
+  position: absolute;
+  left: 58%;
+  width: 25%;
+  height: 30vh;
+  border-radius: 20px;
+}
+.roomsection .img04 img {
+  position: absolute;
+  left: 58%;
+  background-size: cover;
+  background-position: center;
+  bottom: 2%;
+  width: 25%;
+  height: 65vh;
+  border-radius: 20px;
+}
+.roomsection img {
+  transition: 0.5s;
+}
+.roomsection img:hover {
+  transform: scale(1.05);
+}
+.foods {
+  position: relative;
+  height: 70vh;
+}
+.foodpla {
+  display: flex;
+  justify-content: space-between;
+}
+.foods .foodpla img {
+  width: 75%;
+  height: 44vh;
+  margin: 10px;
+  margin: 30px;
+  border-radius: 30px;
+  filter: drop-shadow(8px 8px 12px rgb(9, 9, 9));
+  transition: 0.5s;
+}
+.foods .foodpla img:hover {
+  transform: scale(1.1);
+}
+.activitys {
+  position: relative;
+  height: 100vh;
+}
+.activitys h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+}
+.activitys .activity_content {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.activitys .activity_content p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #c6ad86;
+  /* background-color: #a7632f; */
+  width: 40vw;
+  height: 25vh;
+  margin-left: 30%;
+  margin-bottom: 40px;
+}
+.activitys .activity_content img {
+  height: 40vh;
+  width: 42vw;
+  margin-top: 20px;
+  margin-left: 30%;
+  border-radius: 25px;
+}
+.activitys .activity_content .imgactiv img {
+  margin-right: 10%;
+  width: 25vw;
+  height: 80vh;
+  margin-left: 80%;
+  border-radius: 25px;
+}
+.location {
+  position: relative;
+  height: 80vh;
+}
+
+.location h1 {
+  text-align: center;
+  margin: 6px 10px 40px;
+  font-size: 38px;
+}
+.locationcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.locationcontent img {
+  margin-left: 22%;
+  width: 80%;
+  height: 60vh;
+  border-radius: 20px;
+}
+.locationparagraph {
+  margin-right: 13%;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 33px;
+  color: #c6ad86;
+  font-weight: bold;
+  width: 400px;
+}
+.contactsection {
+  position: inherit;
+  height: 45vh;
+}
+.contactsection h1 {
+  text-align: center;
+  margin: 6px 10px 40px;
+  font-size: 38px;
+}
+.nomEmailinput,
+.messegeBtnContact {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 18%;
+  color: aliceblue;
+}
+.nomEmailinput input {
+  border: none;
+  font-size: 18px;
+  color: aliceblue;
+  width: 20vw;
+  padding: 6px 20px;
+  border: #156055 solid 0.5px;
+  border-radius: 5px;
+  background-color: #156055;
+}
+
+.messegeBtnContact input,
+.messegeBtnContact button {
+  border: none;
+  font-size: 18px;
+  color: aliceblue;
+  width: 32vw;
+  margin-top: 40px;
+  padding: 6px 20px;
+  border: #156055 solid 0.5px;
+  border-radius: 5px;
+  background-color: #156055;
+}
+.messegeBtnContact button {
+  width: 10vw;
+  color: #156055;
+  cursor: pointer;
+  background-color: #c6ad86;
+  font-weight: 500px;
+  transition: 0.3s;
+}
+.messegeBtnContact button:hover {
+  background: transparent;
+  border: 1px solid #c6ad86;
+  color: #c6ad86;
+}
+.footer {
+  position: relative;
+  height: 45vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.emailform {
+  background-color: aliceblue;
+  width: 380px;
+  border-radius: 10px;
+  color: #000000;
+  margin: 30px;
+}
+.emailform input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 15px;
+}
+.emailform input:focus{
+  outline: none;
+}
+.emailform button {
+  background-color: #032c26;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.emailform button:hover {
+  background-color: #03483d;
+}
+.meiaIcodns {
+  color: #ffffff;
+  margin-left: 40%;
+}
+/* ____________________media icons_______________________ */
+.icons {
+  position: absolute;
+  left: 5%;
+}
+.icons a img {
+  margin: 18px;
+  width: 25px;
+  transition: 0.5s;
+}
+.icons a img:hover {
+  transform: scale(1.4);
+}
+.fotercontact,
+.foterLocation {
+  margin-top: 35px;
+  width: 380px;
+  margin-left: 80px;
+}
+.fotercontact h2,
+.foterLocation h2 {
+  font-size: 26px;
+  color: #156055;
+}
+.fotercontact p,
+.foterLocation p {
+  color: #ffffff;
+  padding: 15px;
+  font-size: large;
+  font-weight: bolder;
+}
+.foterLocation p a {
+  color: wheat;
+  font-size: 17px;
+}

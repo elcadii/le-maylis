@@ -1,0 +1,133 @@
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    nav {
+        width: 20vw;
+    }
+
+    .intredectioSection {
+        height: 35vh;
+    }
+
+    .reserver {
+        display: none;
+    }
+
+    .abouts {
+        height: 65vh;
+    }
+
+    .abouts .Pabout {
+        height: 55vh;
+    }
+
+    .abouts .Pabout h1 {
+        margin-top: 12px;
+    }
+
+    .abouts .Pabout .para {
+        left: 13%;
+        margin-top: 0px;
+        width: 50vh;
+    }
+
+    .abouts .Pabout .p {
+        margin: 14px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .AboutImg video {
+        top: 11%;
+        width: 23%;
+        height: 55vh;
+    }
+
+    .roomsection {
+        height: 80vh;
+    }
+
+    .roomsection .img01 img {
+        left: 5%;
+        width: 40%;
+        height: 32vh;
+    }
+
+    .roomsection .img02 img {
+        bottom: 2%;
+        left: 5%;
+        width: 40%;
+        height: 32vh;
+    }
+
+    .roomsection .img03 img {
+        display: none;
+    }
+
+    .roomsection .img04 img {
+        left: 50%;
+        bottom: 2%;
+        width: 45%;
+        height: 68vh;
+    }
+
+    .foods {
+        height: 36vh;
+    }
+
+    .foods .foodpla img {
+        width: 90%;
+        height: 26vh;
+        margin: 4px;
+        border-radius: 15px;
+    }
+
+    .activitys {
+        height: 68vh;
+    }
+
+    .activitys .activity_content .activtysP img {
+        display: none;
+    }
+
+    .activitys .activity_content {
+        align-items: normal;
+        text-align: left;
+    }
+
+    .activitys .activity_content p {
+        font-size: 20px;
+        line-height: 26px;
+        /* background-color: #a7632f; */
+        width: 43vw;
+        /* height: 21vh; */
+        margin-left: 8%;
+    }
+
+    .activitys .activity_content .imgactiv img {
+        margin-right: 10%;
+        width: 31vw;
+        height: 49vh;
+        margin-left: 50%;
+        border-radius: 25px;
+    }
+    .location {
+        height: 60vh;
+    }
+    .locationcontent img {
+        margin-left: 6%;
+        width: 76%;
+        height: 41vh;
+    }
+
+    .locationparagraph {
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 36px;
+        color: #c6ad86;
+        font-weight: bold;
+        width: 40vw;
+    }
+    .messegeBtnContact button {
+        width: 14vw;
+    }
+}
